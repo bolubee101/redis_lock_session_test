@@ -49,6 +49,4 @@ const redlock = new Redlock(
 
 app.get('/:id',manageSession)
 
-app.listen(process.env.PORT,()=>{
-    console.log("connected")
-})
+app.listen(process.env.PORT || 3000)
